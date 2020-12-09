@@ -1,0 +1,82 @@
+/* -----------------------MODOS BASICO Y AVANZADO  ----------------------------- */
+/* -------------- TABLA  ---------------- */
+/* Texto en gris para los elementos de la tabla sin valor */
+#textogris{
+    -fx-text-fill: gray;
+}
+
+
+
+/* ----------------------------- MODO GRÁFICOS ------------------------------------ */
+/* -------------- TODOS LOS GRÁFICOS ---------------- */
+/* Fondo */
+.chart-plot-background {
+    -fx-background-color: lightblue;
+}
+
+/* Líneas horizontales y verticales */
+.chart-horizontal-grid-lines, .chart-vertical-grid-lines{
+    -fx-stroke: grey;
+}
+
+/* Etiquetas de graduación de los ejes */
+.axis{ 
+    -fx-tick-label-fill: white;
+    -fx-tick-label-font-size: 16 px; 
+    -fx-tick-label-font-weight: bold; 
+}
+
+/* --------------- GRÁFICOS DE TARTA ---------------------*/
+/* Etiquetas del gráfico de tarta */
+.chart-pie-label {
+    -fx-font-size: 22 px;
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* --------------- GRÁFICOS XY ---------------------*/
+/* Etiquetas de eje de los gráficos XY */
+.axis-label {
+    -fx-font: 22 arial;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Gráfico de dispersión ------------ */
+/* Etiqueta usada como encabezado de las etiquetas emergentes en los Gráficos de Dispersión */
+#etiquetaNegraPequeña{
+    -fx-font: 12 arial;
+    -fx-text-fill: black;
+}
+
+/* --------- GRÁFICOS NO DE DISPERSIÓN --------- */
+/* Etiqueta usada para mostrar el valor de las series en gráficos que no son de dispersión */
+#etiquetaNegraGrande{
+    -fx-font: 22 arial;
+    -fx-text-fill: black;
+}
+
+
+
+/* ----------------------------- ELEMENTOS GENERALES -------------------------------- */
+/* Botones, Comboboxes, ColorPickers y Botones de elección */
+Button, ComboBox, ColorPicker, RadioButton {
+    -fx-background-radius:10;
+    -fx-font-weight: bold;
+}
+
+/* Texto en negrita */
+#negrita {
+    -fx-font-weight: bold;
+}
+
+/* StackPane "Mostrar serie" del C. Gráfico Dispersión y Sentencia Individual*/
+#sp, SentenciaIndividual, SentenciasGrupales {
+    -fx-background-color: white;
+    -fx-background-radius:10;
+}
+
+/* Fondo del Panel Principal */
+#PP{
+    -fx-background-size: cover;
+    -fx-background-image: url("../imagenes/fondos/3.png");}

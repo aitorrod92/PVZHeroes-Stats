@@ -1,0 +1,20 @@
+Modo Gráficos
+Su función es la creación de gráficos que muestren el resultado de búsquedas normales o grupales. Sitúa el ratón sobre la imagen y pulsa en cada uno de los elementos para obtener más información.
+***
+Selección del tipo de gráfico
+Permite seleccionar el tipo de gráfico a crear: Gráfico de Barras, Gráfico Barras Apiladas, Gráfico de Dispersión o Gráfico de Tarta. Al cambiar el tipo, los elementos para la definición de filtros y series se adaptarán de manera coherente.
+***
+Botón "Crear gráfico"
+Lanza la búsqueda definida por cada Sentencia Individual o Sentencias Grupales asociados a cada serie y crea el gráfico en la parte inferior de la pantalla.
+***
+Sentencia Individual/Sentencias Grupales
+Cada serie del gráfico tendrá asociado uno de estos componentes para definir sus sentencias. Gráfico de Dispersión representa registros y, por ende, emplea Sentencia Individual, mientras que Gráfico de Barras, Gráfico Barras Apiladas y Gráfico de Tarta representan valores y, por tanto, utilizan Sentencias Grupales.
+***
+C. Gráfico Grupal/C. Gráfico Dispersión
+El C. Gráfico Grupal aparece cuando se ha seleccionado un gráfico que representa valores (Gráfico de Barras, Gráfico Barras Apiladas y Gráfico de Tarta), mientras que el Componente Gráfico Dispersión únicamente está disponible con el Gráfico de Dispersión.
+***
+Gráfico
+Tras pulsar el botón "Crear gráfico", aquí aparecerá el tipo de gráfico definido por "Selección de tipo de gráfico" y por la Sentencia Individual (Gráfico de Dispersión) o por las Sentencias Grupales (Gráfico de Barras, Gráfico Barras Apiladas o Gráfico de Tarta) de cada serie.
+***
+Botón "Nueva serie"
+Crea una nueva serie, lo que implica que aparezcan un nuevo C. Gráfico Dispersión y una nueva Sentencia Individual (si el Gráfico de Dispersión está seleccionado) o un nuevo C. Gráfico Grupal y unas nuevas Sentencias Grupales (si alguno de los gráficos restantes está seleccionado).

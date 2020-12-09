@@ -1,0 +1,20 @@
+C. Gráfico Dispersión
+El Componente Gráfico Dispersión aparece en el Modo Gráficos asociado a cada una de las series de un Gráfico de Dispersión. Sirve para especificar los atributos generales que caracterizarán a la serie. Excepto "Mostrar/Ocultar serie", todos los controles requieren que se cree un nuevo gráfico para ser aplicados.
+***
+Nombre de la serie
+Permite introducir el nombre identificador de la serie, el cual aparecerá en la leyenda de la parte inferior del gráfico, acompañado de su color.
+***
+Botón "-"  
+Elimina la serie. Las series posteriores se desplazarán un espacio a la izquierda. El gráfico conservará la serie hasta que se genere uno nuevo. Aparece desactivado en la primera serie, puesto que todo gráfico ha de contener al menos una.
+***
+Selección de eje X
+Especifica qué variable representan los valores del eje X. Hay 3 opciones a elegir: Ataque, Defensa y Coste. Por defecto, cada nueva serie generada aparecerá con la variable elegida en la anterior seleccionada automáticamente. Una vez elegida la primera variable, se recomienda no modificar las siguientes, para utilizar la misma en todas las series y así generar gráficos coherentes.
+***
+Selección de eje Y
+Especifica qué variable representan los valores del eje Y. Hay 3 opciones a elegir: Ataque, Defensa y Coste. Por defecto, cada nueva serie generada aparecerá con la variable elegida en la anterior seleccionada automáticamente. Una vez elegida la primera variable, se recomienda no modificar las siguientes, para utilizar la misma en todas las series y así generar gráficos coherentes.
+***
+Selección de color
+Permite elegir el color de la serie. Todos los puntos de la serie, así como su parte en la legenda inferior, serán generados con el color seleccionado.
+***
+Mostrar/Ocultar serie
+Si se deselecciona, los puntos correspondientes a su serie dejarán de ser mostrados. Sin embargo, los registros que coincidan con registros de otra serie seguirán siendo mostrados en el Listado Emergente (véase "Gráfico de Dispersión"). Es el único control que del C. Gráfico Dispersión que no requiere crear un nuevo gráfico para ser aplicado.

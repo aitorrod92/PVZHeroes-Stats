@@ -1,0 +1,11 @@
+Sentencia Individual
+Permite definir una sentencia individual (es decir, que devuelve un conjunto de registros) mediante la adicción de filtros. En el Modo Básico, únicamente está disponible cuando la búsqueda normal ("Búsqueda") en "Selección de búsqueda" está marcada. En el Modo Gráficos, cada serie de un Gráfico de Dispersión tiene asociada una sentencia individual.
+***
+Etiquetas de filtros
+Los filtros que definen la sentencia se guardan con una etiqueta que muestra el inicio de la condición en SQL. Se añaden de abajo a arriba, quedando el último en la segunda posición más baja del componente.
+***
+Botón "-"
+Permite borrar el filtro que se sitúa a su izquierda.
+***
+Botón "+"
+Abre el Diálogo filtros, que permite crear un nuevo filtro.

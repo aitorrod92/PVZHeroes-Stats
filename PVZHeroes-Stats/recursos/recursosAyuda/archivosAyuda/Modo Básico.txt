@@ -1,0 +1,20 @@
+Modo básico
+Este modo permite realizar búsquedas sencillas. Sitúa el ratón sobre la imagen y pulsa en cada uno de los elementos para obtener más información.
+***
+Botón "Cambiar tipo de carta"
+Permite seleccionar el objeto de la búsqueda: plantas, zombies o ambos. Se puede cambiar rápidamente con las teclas direccionales de izquierda y derecha.
+***
+Tabla/Área de texto
+Este espacio albergará una tabla si se ha realizado una consulta simple y un área de texto si se ha realizado una consulta grupal. En el primer caso, las columnas mostradas irán en función de las seleccionadas en la "Lista de checks" mientras que, en el segundo, los distintos resultados serán mostrados con cada uno de los identificadores que se les asignó en el Diálogo FG. En la tabla, la columna "Nombres" tiene la particularidad de mostrar hipervinculos que, de ser pulsados, abren una ventana en el explorador con la página de la carta en la wiki oficial.
+***
+Botón "Buscar"
+Ejecuta la búsqueda, utilizando los filtros definidos (en caso de que existan) por la Sentencia Individual o por las Sentencias Grupales. El resultado se muestra en la tabla/área de texto inferior. Si la búsqueda no devuelve resultados, la tabla/área de texto quedará vacía. Su atajo de teclado es la tecla "Enter".
+***
+Lista de checks/Sentencias Grupales
+El componente que aparece en este espacio depende de qué esté seleccionado en "Selección de búsqueda". Si la consulta es simple, aparecerá la lista de checks, que permite elegir las columnas que se mostrarán en la tabla inferior. Si la consulta es grupal, aparecerán las Sentencias Grupales. 
+***
+Selección de búsqueda
+Permite elegir entre el modo de consulta simple ("Búsqueda") o el grupal ("Valores"), mostrando respectivamente la "Lista de checks" o los Sentencias Grupales en la parte inferior.
+***
+Sentencia Individual
+Únicamente disponible cuando la consulta simple ("Búsqueda") en "Selección de búsqueda" está marcada. Permite añadir una Sentencia Individual, que contendrá los filtros que definirán la búsqueda.
