@@ -17,5 +17,5 @@
 
 - Customization of the app and a thorough interactive and integrated user's guide ("Sistema de Ayuda").
 
-![image](https://user-images.githubusercontent.com/40747197/101830760-47de7980-3b35-11eb-9853-0b401d13f1b6.png)
+![image](https://user-images.githubusercontent.com/40747197/101831254-f71b5080-3b35-11eb-91e5-6e8607336498.png)
 
