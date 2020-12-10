@@ -3,7 +3,7 @@
 
 "PVZHeroes-Stats" is an application to help players to visualize and understand that huge amount of data by two ways: launching queries and creating charts. Among its main functionalities, there are:
 
-- Cards searching using different filters, either using the GUI or SQL.
+- Cards searching applying different filters, either using the GUI or SQL.
 
 ![ModoBásico](https://user-images.githubusercontent.com/40747197/101830325-a2c3a100-3b34-11eb-925b-31c4e8a5be0d.JPG)
 
