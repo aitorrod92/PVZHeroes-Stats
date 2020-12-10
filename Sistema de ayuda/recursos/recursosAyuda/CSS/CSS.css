@@ -1,0 +1,20 @@
+/*Enlaces del panel izquierdo*/
+#enlacekhaki{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: khaki;
+}
+
+#enlacekhaki:visited{
+    -fx-text-fill: darkkhaki;
+}
+
+/*Color de las barras de desplazamiento vertical*/
+.scroll-bar:vertical .thumb {
+    -fx-background-color: deepskyblue;
+}
+
+/* Fondo del panel derecho */
+#PanelDerecho{
+    -fx-background-color: khaki;
+}

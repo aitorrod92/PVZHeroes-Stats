@@ -1,0 +1,8 @@
+Ayuda emergente
+Son rectángulos con texto que proporcionan el nombre del elemento de la interfaz gráfica con el que se asocian y un vínculo a la página de ayuda en la que se explica su función. Aparecen al posar el puntero encima de los distintos componentes, siempre que la opción correspondiente esté activada en el diálogo Opciones. Para hacerlos desaparecer, basta con pasar el puntero por encima de ellos y sacarlo, evitando salir del componente (imagen inferior).
+***
+Nombre del componente
+El nombre del componente gráfico, tal y como aparece en la ayuda.
+***
+Enlace a la ayuda
+Enlace que redirige a la página de la ayuda en la que se explica el elemento, sin cerrar la aplicación principal. El elemento no saldrá seleccionado automáticamente en la ayuda, sino que es responsabilidad del usuario clicar sobre él.

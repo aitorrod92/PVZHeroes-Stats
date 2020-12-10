@@ -1,0 +1,11 @@
+Gráfico de Tarta
+Este tipo de gráfico se utiliza para visualizar fácilmente qué proporción del total de la suma de todas las Sentencias Grupales supone cada sentencia grupal concreta. Por ejemplo, en el gráfico inferior, se puede apreciar que las distintas categorías tienen un valor más o menos similar, de en torno al 20% del total.
+***
+Porción
+Es cada uno de los trozos que componen el círculo y que representan distintas Sentencias Grupales (cuyo identificador aparece en forma de etiqueta). A mayor tamaño de la porción, más supondrá su valor sobre el total. Tal como se muestra en la animación superior, para consultar el valor concreto de una porción, basta con situar el ratón sobre ella y una etiqueta indicándolo aparecerá en la parte central del círculo.
+***
+Etiqueta
+Muestra el valor de la porción sobre la que el ratón está situado.
+***
+Legenda (GT)
+Relaciona cada porción con la sentencia de Sentencias Grupales que lo define a través de su color. Por ejemplo: la porción de color rojo representa el valor asociado a la sentencia grupal "Trucos Astuto".

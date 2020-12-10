@@ -1,0 +1,21 @@
+Modo Avanzado
+El modo avanzado permite llevar a cabo búsquedas en SQL. Esto incluye todas las búsquedas posibles en el Modo Básico y otras que no lo son, como las que conllevan el uso de condiciones con paréntesis y de DISTINCT. Para utilizar este modo, es necesario conocer el nombre de las columnas que integran la tabla y los nombres en inglés de los valores de búsqueda, los cuales se pueden encontrar ambos en Estructura de la BBDD.
+***
+Consulta simple
+Este espacio está destinado a escribir consultas simples. Las posibilidades extra respecto al Modo Básico son:
+- Uso de SELECT DISTINCT para obtener registros cuyas columnas son únicas.
+- Uso de paréntesis en las condiciones del WHERE, para agruparlas y formar condiciones más complejas.
+***
+Botón "Buscar" (modo avanzado)
+Lanza la consulta que se encuentra a su izquierda. Si la sentencia hace referencia a columnas que no existen, tiene una sintaxis incorrecta o es correcta pero se encuentra en un campo incorrecto (por ejemplo, una sentencia de grupo en el apartado para consultas simples), aparecerá un mensaje de error específico. El botón situado a la derecha de Consulta Simple tiene como atajo de teclado la tecla "Enter".
+***
+Consultas de grupo
+Este espacio está destinado a escribir consultas de grupo. Las posibilidades extra respecto al Modo Básico son:
+- Uso de DISTINCT para utilizar únicamente registros cuyas columnas son únicas en la obtención del valor.
+- Uso de paréntesis en las condiciones del WHERE, para agruparlas y formar condiciones más complejas.
+- La función de agregado SUM es totalmente funcional.
+
+Para diferenciar las distintas consultas, se puede establecer un identificador para cada una con "AS", como se emplea normalmente en SQL. GROUP BY no está disponible, pero se tiene la intención de implementarlo en futuras actualizaciones.
+***
+Tabla/Área de texto (modo avanzado)
+Este espacio albergará una tabla con los registros devueltos por la consulta si esta es simple, o un área de texto con frases con los identificadores y valores, si es grupal. En la tabla, la columna "Nombres" tiene la particularidad de mostrar hipervínculos que, de ser pulsados, abren una ventana en el explorador con la página de la carta en la wiki oficial.

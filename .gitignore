@@ -6,3 +6,9 @@ Peashooter.png
 ScriptInstalación.iss
 buildAplicación.xml
 buildAyuda.xml
+/PVZHeroes-Stats/build/
+/PVZHeroes-Stats/dist/
+/Sistema de ayuda/dist/
+buildayuda.xml
+build.xml
+tmp

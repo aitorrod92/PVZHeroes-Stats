@@ -1,0 +1,11 @@
+C. Gráfico Grupal
+El Componente Gráfico Grupal aparece en el Modo Gráficos asociado a cada una de las series de un Gráfico de Barras, Gráfico Barras Apiladas o Gráfico de Tarta. Sirve para especificar el tipo de función y variable que se utilizarán en la sentencia grupal. 
+***
+Selección de función
+Especifica el tipo de función que aparecerá predeterminado en todas las Sentencias Grupales de su serie asociada. Si bien es posible cambiarlo para cada nueva sentencia grupal, se recomienda no hacerlo, con el objetivo de mantener la coherencia (no tiene sentido agrupar en una misma serie y, por tanto, bajo una misma etiqueta, conteos y medias, por ejemplo).
+***
+Selección de variable
+Especifica el tipo de variable que se utilizará en todas las Sentencias Grupales de su serie asociada. Si bien es posible cambiarlo para cada nueva sentencia grupal, se recomienda no hacerlo, con el objetivo de mantener la coherencia (no tiene sentido agrupar en una misma serie y, por tanto, bajo una misma etiqueta, media de ataque y coste máximo, por ejemplo).
+***
+Botón "-" 
+Elimina la serie. Las series posteriores se desplazarán un espacio a la izquierda. El gráfico conservará la serie hasta que se genere uno nuevo.

@@ -1,0 +1,22 @@
+Diálogo filtros
+Se abre al pulsar el botón "+" de Sentencia Individual o el botón "Nuevo" del Diálogo FG. Al pulsar "Aceptar", en el primer caso crea el filtro de búsqueda definido por sus campos en dicha sentencia y, en el segundo, lo añade a la sentencia grupal que se está creando.
+***
+Selección de categoría
+Permite seleccionar la categoría sobre la que se aplicará el filtro: nombre, ataque, defensa, coste, clase, tribus, atributos, habilidades, rareza, mazo y, en caso de que la búsqueda se esté realizando sobre plantas y zombies conjuntamente, tipo. En función de la categoría que se seleccione, los dos campos inferiores se adaptarán para mostrar opciones coherentes.
+***
+Selección de relación
+Permite seleccionar el tipo de relación de la categoría con el valor de su filtro. Existen varias opciones:
+- Texto (nombre, clase, tribus, atributos, habilidades). "Contiene", "No contiene", "Es exactamente" y "No es exactamente".
+- Números (ataque, defensa, coste). "Mayor que", "Mayor o igual que", "Igual que", "Menor o igual que" y "Menor que".
+- Booleanos (rareza, mazo). "Es" y "No es".
+***
+Selección de valor
+Sirve para introducir o seleccionar el valor de la categoría del filtro. Dependiendo de la categoría seleccionada permite:
+a) Introducir cualquier caracter.
+b) Introducir sólo números
+c) Elegir entre opciones predefinidas. 
+
+Si la categoría seleccionada es "tribus" o "habilidades", se proporcionarán opciones de autocompletado a medida que se escribe. Puesto que la búsqueda se lleva a cabo en inglés, estas opciones se traducen automáticamente de manera interna, por lo que se recomienda hacer uso de las mismas. Hay que tener en cuenta que las opciones de autocompletado están limitadas al tipo de cartas seleccionadas, por lo que las correspondientes a zombies no se mostrarán si la búsqueda está limitada a plantas en el Botón "Cambiar tipo de carta" y viceversa.
+***
+Selección de relación con condición anterior
+Sólo disponible cuando ya existe un filtro creado previamente. Permite elegir si un registro debe cumplir tanto el filtro anterior como el actual para ser devuelto por la búsqueda (opción "Necesaria", equivalente al "AND" de SQL) o si basta con que cumpla uno de los dos (opción "Alternativa", equivalente al "OR" de SQL). La creación de agrupaciones de subcondiciones (lo que implicaría el uso de paréntesis en SQL) sólo está soportada en el Modo Avanzado.

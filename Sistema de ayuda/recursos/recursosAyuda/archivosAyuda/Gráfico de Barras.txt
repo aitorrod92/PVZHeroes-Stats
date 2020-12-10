@@ -1,0 +1,17 @@
+Gráfico de Barras
+Este tipo de gráfico representa diferentes categorías (conjuntos de registros) en el eje X, cada una de las cuales se asocia con uno o varios valores del eje Y. Un conjunto de variables que coincide entre distintas categorías se denomina "serie" y cada serie tiene una barra por categoría y un color característico. De este modo, un mismo gráfico puede contener varias categorías ("Flores", "Guisantes", etc.) para cada una de las cuales existan distintas series ("Ataque medio" con color rojo, "Defensa máxima" con color azul, etc.), que pueden ser o no coincidentes entre distintas categorías.
+***
+Legenda
+Muestra el significado de los valores de una serie, relacionando el color de la misma con un código con formato FUNCIÓN(VARIABLE). Las funciones aparecen en formato abreviado: COUNT (Conteo), AVG (Media), MAX (Máximo) y MIN (Mínimo).
+
+Generalmente, las combinaciones función-variable serán compartidas entre todas las categorías de una misma serie y coincidirán con los que se seleccionaron en el C. Gráfico Grupal. En la imagen superior, por ejemplo, todas las barras rojas equivalen a valores de "media de ataque". Sin embargo, si se ha optado por crear una serie cuyas funciones y/o variables no son coherentes entre distintas categorías (lo cual se desaconseja), el código de la legenda mostrará únicamente la última combinación función-variable añadida.
+***
+Eje Y
+Sirve como referencia para determinar qué valor alcanza cada serie en distintas combinaciones función-variable. El significado concreto del eje Y para cada serie se puede consultar en la legenda inferior. En la imagen superior, el eje Y equivale a unidades de ataque para la serie roja, de defensa para la amarilla y de coste para la verde.
+***
+Barras
+Son rectángulos cuya altura se puede interpolar al eje Y, dotando de un valor a una serie concreta de una categoría concreta. En la imagen superior, la barra central amarilla alcanza el valor X, lo que significa que la serie "AVG (Defensa)" (defensa media) vale X para la categoría "Flores". Situar el puntero sobre cualquier barra provocará que se muestre su valor en su centro, así como que su color se vuelva más llamativo y el resto de barras se difuminen.
+***
+Categorías
+Cada sentencia grupal devuelve el valor de una función aplicada a un conjunto de registros. Las categorías no son más que Sentencias Grupales de distintas series que poseen el mismo nombre. En el gráfico superior, por ejemplo, la categoría "Flores" ha sido definida dotando del mismo identificador a sentencias grupales de distintas series. El Diálogo FG proporciona opciones de autocompletado con los identificadores ya utilizados, para facilitar la agrupación de sentencias en categorías comunes.
+
