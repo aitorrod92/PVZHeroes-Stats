@@ -185,8 +185,9 @@ public class MétodosCompartidos {
     /**
      * Elimina la columna en la que se ha pulsado un botón de un GridPane y
      * desplaza las siguientes atrás. Se asume que el botón se encuentra dentro
-     * de un contenedor "ComponenteGráficoGrupal" o "ComponenteGráficoDispersión".
-     * Los nodos que no son visibles no se eliminan.
+     * de un contenedor "ComponenteGráficoGrupal" o
+     * "ComponenteGráficoDispersión". Los nodos que no son visibles no se
+     * eliminan.
      *
      * @param BotónOrigen Botón de la fila que se quiere eliminar
      * @param Panel GridPane en el que se realiza la modificación
@@ -202,7 +203,7 @@ public class MétodosCompartidos {
             Boolean EsCGD = componentesDeCelda.get(i).getClass() == ComponenteGráficoDispersión.class;
 
             if (CGG) {
-                Boolean CGGContieneBotón = ((HBox) componentesDeCelda.get(i)).getChildren().get(1).equals(BotónOrigen);          
+                Boolean CGGContieneBotón = ((HBox) componentesDeCelda.get(i)).getChildren().get(1).equals(BotónOrigen);
                 if (CGGContieneBotón) {
                     ColumnaBotón = GridPane.getColumnIndex(componentesDeCelda.get(i));
                     AEliminar.add(componentesDeCelda.get(i));

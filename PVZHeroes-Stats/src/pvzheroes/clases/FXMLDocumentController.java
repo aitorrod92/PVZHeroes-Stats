@@ -306,7 +306,16 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void AbrirAyuda() throws Exception {
         Runtime r = Runtime.getRuntime();
-        r.exec(constantes.RUTAS_EXTERNAS.AYUDA.Ruta);
+        File exeAyuda = new File(constantes.RUTAS_EXTERNAS.AYUDA_EXE.Ruta);
+        File jarAyuda = new File(constantes.RUTAS_EXTERNAS.AYUDA_JAR.Ruta);
+        if (exeAyuda.exists()) {
+            r.exec(constantes.RUTAS_EXTERNAS.AYUDA_EXE.Ruta);
+        } else if (jarAyuda.exists()) {
+            r.exec("java -jar " + constantes.RUTAS_EXTERNAS.AYUDA_JAR.Ruta);
+        } else {
+            new DiálogoGenérico(constantes.TIPOS_DIÁLOGO.FALTA_AYUDA.Cadena);
+        }
+  
     }
 
     @FXML

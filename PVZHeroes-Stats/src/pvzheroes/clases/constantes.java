@@ -12,6 +12,7 @@ import pvzheroes.clases.métodosCompartidos.MétodosCompartidos;
 
 public class constantes {
 
+    public static final String NOMBRE_AYUDA = "SistemaDeAyuda";
     public static Boolean SonidosEImágenesCargados = false;
     public static int TIEMPO_ESPERA_TOOLTIPS = 1000;
 
@@ -45,7 +46,8 @@ public class constantes {
         SIN_FONDOS("SIN_FONDOS"),
         ACERCA_DE("ACERCA_DE"),
         FALTA_SONIDO("FALTA_SONIDO"),
-        NUEVA_IMAGEN("NUEVA_IMAGEN");
+        NUEVA_IMAGEN("NUEVA_IMAGEN"),
+        FALTA_AYUDA("FALTA_AYUDA");
 
         public String Cadena;
 
@@ -155,7 +157,8 @@ public class constantes {
         CSS("CSS"),
         SONIDOS("sonidos"),
         FONDOS("fondos"),
-        AYUDA("ayuda"),
+        AYUDA_EXE("ayuda_exe"),
+        AYUDA_JAR("ayuda_jar"),
         BBDD("PVZHeroes.db"),
         PROPIEDADES("propiedades.properties");
 
@@ -171,8 +174,11 @@ public class constantes {
                 case "sonidos":
                     Ruta = RUTA_BASE + carpeta;
                     break;
-                case "ayuda":
-                    Ruta = "SistemaDeAyuda.exe";
+                case "ayuda_exe":
+                    Ruta = NOMBRE_AYUDA + ".exe";
+                    break;
+                case "ayuda_jar":
+                    Ruta = NOMBRE_AYUDA + ".jar";
                     break;
                 case "PVZHeroes.db":
                 case "propiedades.properties":

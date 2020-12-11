@@ -96,7 +96,7 @@ public class CrearToolTip {
             public void handle(Event event) {
                 Runtime r = Runtime.getRuntime();
                 try {
-                    r.exec(constantes.RUTAS_EXTERNAS.AYUDA.Ruta 
+                    r.exec(constantes.RUTAS_EXTERNAS.AYUDA_EXE.Ruta 
                             + " \"" + link.getText() + "\"");
                 } catch (IOException ex) {
                     System.out.println("No se ha podido abrir la ayuda");
