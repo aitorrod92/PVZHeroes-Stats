@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="PanelPrincipal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="487.0" prefWidth="488.0" style="-fx-background-color: steelblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pvzheroes.clases.FXMLDocumentController">
+    <children>
+      <MenuBar fx:id="Barrademenús" layoutY="2.0" prefHeight="25.0" prefWidth="454.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="_Archivo">
+            <items>
+              <MenuItem fx:id="MenúCerrar" mnemonicParsing="true" onAction="#MenúCerrar" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="_Modo">
+            <items>
+                  <RadioMenuItem fx:id="RadioBásico" mnemonicParsing="false" onAction="#PasarAModoBasico" text="Básico">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="OpcionesModo" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="RadioAvanzado" mnemonicParsing="false" onAction="#PasarAModoAvanzado" text="Avanzado" toggleGroup="$OpcionesModo" />
+                  <RadioMenuItem fx:id="RadioGráficos" mnemonicParsing="false" onAction="#PasarAModoGráficos" text="Graficos" toggleGroup="$OpcionesModo" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Opciones">
+              <items>
+                <MenuItem fx:id="MenúOpciones" mnemonicParsing="false" onAction="#AbrirOpciones" text="Opciones generales..." />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Ayu_da">
+            <items>
+              <MenuItem fx:id="MenúAyuda" mnemonicParsing="false" onAction="#AbrirAyuda" text="Ayuda" />
+                  <MenuItem fx:id="MenúAcercaDe" mnemonicParsing="false" onAction="#AbrirAcercaDe" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="PanelGráficos" layoutY="30.0" prefHeight="457.0" prefWidth="488.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <GridPane layoutY="1.0" prefHeight="426.0" prefWidth="561.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" maxWidth="252.0" minWidth="10.0" prefWidth="120.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="164.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="184.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="288.0" minHeight="10.0" percentHeight="20.0" prefHeight="117.0" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="316.0" minHeight="10.0" percentHeight="60.0" prefHeight="246.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PanelBásico" layoutX="-2.0" layoutY="28.0" prefHeight="447.0" prefWidth="468.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+              <Button id="BotónAmbosModos" fx:id="BotónBúsqueda" layoutX="31.0" layoutY="117.0" onAction="#AcciónBotónBuscar" prefHeight="25.0" prefWidth="84.0" text="Buscar" />
+            <Button fx:id="BotónTabla" contentDisplay="GRAPHIC_ONLY" layoutX="31.0" layoutY="22.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="54.0">
+               <graphic>
+                  <ImageView fx:id="ImagenBotón" disable="true" fitHeight="70.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <CheckListView fx:id="checkListView" layoutX="130.0" layoutY="60.0" prefHeight="155.0" prefWidth="146.0" />
+            <RadioButton layoutX="130.0" layoutY="26.0" mnemonicParsing="false" onAction="#CambiarToggle" selected="true" text="Búsqueda" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="opcionesBúsqueda" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="211.0" layoutY="26.0" mnemonicParsing="false" onAction="#CambiarToggle" text="Valores" textFill="WHITE" toggleGroup="$opcionesBúsqueda" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PanelAvanzado" layoutY="30.0" prefHeight="459.0" prefWidth="488.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <GridPane fx:id="PanelSentenciasGrupo" layoutX="30.0" layoutY="4.0" prefHeight="200.0" prefWidth="437.0" AnchorPane.bottomAnchor="270.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <Label fx:id="Etiqueta1" text="Consulta" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Etiqueta2" text="Consultas de grupo" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BotónBúsquedaGrupo" onAction="#AcciónBotónBuscarGrupo" prefHeight="25.0" prefWidth="84.0" text="Buscar" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextField fx:id="Consultasimple" prefHeight="25.0" prefWidth="294.0" promptText="Escribe una consulta SQL" GridPane.columnIndex="1" />
+                  <TextArea fx:id="Consultasdegrupo" prefHeight="56.0" prefWidth="296.0" promptText="Escribe  una o varias consultas de grupo (COUNT, AVG, MAX..) que devuelvan un valor cada una. Cada sentencia debe ir separada por &quot;;&quot;&quot;.  Puedes dotarlas de alias (&quot;AS&quot;) para distinguirlas." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="600.0" minWidth="10.0" prefWidth="161.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="217.0" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="79.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="120.0" vgrow="NEVER" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="TablaYAreaTexto" layoutY="255.0" prefHeight="156.0" prefWidth="445.0" visible="false" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="255.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="AreaTextoGrupo" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="394.0" visible="false" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+               <font>
+                  <Font size="20.0" />
+               </font></TextArea>
+            <TableView fx:id="Tabla" style="-fx-selection-bar: tomato; -fx-selection-bar-non-focused: salmon;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
