@@ -19,3 +19,4 @@
 
 ![image](https://user-images.githubusercontent.com/40747197/101831254-f71b5080-3b35-11eb-91e5-6e8607336498.png)
 
+To make it run, just compile both projects and keep the jar files in the same directory as the folder "recursos".
