@@ -1,8 +1,0 @@
-Sentencias Grupales
-Permite añadir nuevos filtros de búsqueda a las búsquedas grupales. En el Modo Básico, únicamente está disponible cuando la búsqueda grupal ("Valores") en "Selección de búsqueda" está marcada. En el Modo Gráficos, define los filtros de cada serie de un Gráfico de Barras, Gráfico Barras Apiladas o Gráfico de Tarta. 
-***
-Etiquetas de sentencias grupales
-Los filtros grupales guardados se muestran con el nombre del identificador añadido en el Diálogo FG. Se añaden de arriba a abajo, quedando el último en la segunda posición más alta del componente.
-***
-Botón "Nuevo"
-Abre el Diálogo FG, que permite crear un nuevo filtro grupal.
