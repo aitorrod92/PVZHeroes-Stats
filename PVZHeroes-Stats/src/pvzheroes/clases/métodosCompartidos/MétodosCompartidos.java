@@ -376,7 +376,7 @@ public class MétodosCompartidos {
                     rs.getString(constantes.COLUMNAS[5]), rs.getString(constantes.COLUMNAS[6]),
                     rs.getString(constantes.COLUMNAS[7]), rs.getString(constantes.COLUMNAS[8]),
                     rs.getString(constantes.COLUMNAS[9]), rs.getString(constantes.COLUMNAS[10]),
-                    rs.getString(constantes.COLUMNAS[11])));
+                    rs.getString(constantes.COLUMNAS[11]), rs.getString(constantes.COLUMNAS[12])));
         }
         st.close();
         return CartasDevueltas;

@@ -55,7 +55,7 @@ public class ModoAvanzado {
                         String.valueOf(rs.getInt(constantes.COLUMNAS[3])), rs.getString(constantes.COLUMNAS[4]),
                         rs.getString(constantes.COLUMNAS[5]), rs.getString(constantes.COLUMNAS[6]),
                         rs.getString(constantes.COLUMNAS[7]), rs.getString(constantes.COLUMNAS[8]), rs.getString(constantes.COLUMNAS[9]),
-                        rs.getString(constantes.COLUMNAS[10]), rs.getString(constantes.COLUMNAS[11])));
+                        rs.getString(constantes.COLUMNAS[10]), rs.getString(constantes.COLUMNAS[11]), rs.getString(constantes.COLUMNAS[12])));
             }
         } else {
             while (rs.next()) {
@@ -81,7 +81,7 @@ public class ModoAvanzado {
                         String.valueOf(valoresConNulls.get(2)), String.valueOf(valoresConNulls.get(3)),
                         valoresConNulls.get(4), valoresConNulls.get(5), valoresConNulls.get(6),
                         valoresConNulls.get(7), valoresConNulls.get(8), valoresConNulls.get(9),
-                        valoresConNulls.get(10), valoresConNulls.get(11)));
+                        valoresConNulls.get(10), valoresConNulls.get(11), valoresConNulls.get(12)));
             }
         }
         return true;

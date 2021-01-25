@@ -36,8 +36,9 @@ public class Carta {
     private SimpleStringProperty Rareza;
     private SimpleStringProperty Mazo;
     private SimpleStringProperty Tipo;
+    private SimpleStringProperty NumeroAtributos;
 
-    public Carta(String Nombre, String Ataque, String Defensa, String Coste, String Clase, String Tribus, String Atributos, String Habilidades, String Rareza, String Mazo, String Tipo, String URL) {
+    public Carta(String Nombre, String Ataque, String Defensa, String Coste, String Clase, String Tribus, String Atributos, String Habilidades, String Rareza, String Mazo, String Tipo, String URL, String NúmeroAtributos) {
         this.Nombre = new Hyperlink();
         this.Nombre.setText(Nombre);
         this.Nombre.setOnAction(new EventHandler<ActionEvent>() {
@@ -72,6 +73,8 @@ public class Carta {
         this.Mazo = new SimpleStringProperty(Mazo);
 
         this.Tipo = new SimpleStringProperty(Tipo);
+
+        this.NumeroAtributos = new SimpleStringProperty(NúmeroAtributos);
     }
 
     public Hyperlink getNombre() {
@@ -115,7 +118,7 @@ public class Carta {
                 listaImágenes.add(lista.get(índiceImagen));
             }
             for (int i = 0; i < listaAtributos.size(); i++) {
-                Caja.getChildren().addAll(new ImageView(listaImágenes.get(i)), 
+                Caja.getChildren().addAll(new ImageView(listaImágenes.get(i)),
                         new Label(listaAtributos.get(i)));
             }
         } else {
@@ -159,9 +162,16 @@ public class Carta {
             }
 
             int NúmerosAsignados = 0;
+            for (String atributop : listaAtributos) {
+                System.out.println("Atributo : " + atributop);
+            }
+            int atributosSinImagen = 0;
             for (int i = 0; i < listaAtributos.size(); i++) { // Se añaden los elementos al HBox en orden
                 if (DiccionarioImágenes.ImagenAArrayList.containsKey(listaAtributos.get(i))) {
-                    Caja.getChildren().add(new ImageView(listaImágenes.get(i)));
+                    System.out.println("Buscando la imagen correspondiente a atributo " + listaAtributos.get(i));
+                    Caja.getChildren().add(new ImageView(listaImágenes.get(i - atributosSinImagen)));
+                } else {
+                    atributosSinImagen++; // Esto se utiliza para evitar que los atributos sin imagen aumenten el índice de imagen a buscar
                 }
                 Label etiquetaAtributo = new Label(listaAtributos.get(i));
                 etiquetaAtributo.setId(constantes.IDs_CSS.NEGRITA.identificador);
@@ -304,5 +314,19 @@ public class Carta {
             etiqueta.setId(constantes.IDs_CSS.TEXTO_GRIS.identificador);
         }
         return etiqueta;
+    }
+
+    public HBox getNumeroAtributos() {
+        HBox Caja = new HBox();
+        Label etiqueta = new Label(NumeroAtributos.get());
+        if (NumeroAtributos.get().equals("0")) {
+            etiqueta.setId(constantes.IDs_CSS.TEXTO_GRIS.identificador);
+        } else if (NumeroAtributos.get().equals("1")) {
+            Caja.setStyle("-fx-background-color: yellow");
+        } else {
+            Caja.setStyle("-fx-background-color: green");
+        }
+        Caja.getChildren().add(etiqueta);
+        return Caja;
     }
 }

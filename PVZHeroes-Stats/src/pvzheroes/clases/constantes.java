@@ -368,7 +368,7 @@ public class constantes {
     }
 
     // Define los campos que se muestran en la consulta
-    public static final String[] COLUMNAS = {"Nombre", "Ataque", "Defensa", "Coste", "Clase", "Tribus", "Atributos", "Habilidades", "Rareza", "Mazo", "Tipo", "URL"};
+    public static final String[] COLUMNAS = {"Nombre", "Ataque", "Defensa", "Coste", "Clase", "Tribus", "Atributos", "Habilidades", "Rareza", "Mazo", "Tipo", "URL", "NumeroAtributos"};
     public static final String[] NOMBRE_SÍMBOLOS = {"strength", "health", "suns", "brains", "freeze", "anti-hero",
         "bullseye", "armored", "strikethrough", "untrickable", "double strike", "frenzy", "deadly", "overshoot"};
     public static final String[] TIPOS_CARTA = {"Tipo = \"plants\"", "Tipo = \"zombies\"", "(Tipo = \"plants\" OR Tipo = \"zombies\")"};

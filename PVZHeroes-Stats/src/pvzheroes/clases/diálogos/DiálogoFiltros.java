@@ -177,7 +177,7 @@ public class DiálogoFiltros {
                 CategoríaSeleccionada = (String) Categoría.getSelectionModel().getSelectedItem();
 
                 // Si la categoría es numérica, las relaciones son acordes y sólo se pueden introducir números
-                if (CategoríaSeleccionada.equals("Ataque") || CategoríaSeleccionada.equals("Defensa") || CategoríaSeleccionada.equals("Coste")) {
+                if (CategoríaSeleccionada.equals("Ataque") || CategoríaSeleccionada.equals("Defensa") || CategoríaSeleccionada.equals("Coste") || CategoríaSeleccionada.equals("NumeroAtributos")) {
                     Relación.setItems(FXCollections.observableArrayList(RELACIONES_INTEGER));
                     Valor.setTextFormatter(new TextFormatter(cambio));
                     Valor.setText("0");
