@@ -1,14 +1,11 @@
 package pvzheroes.clases.clasesParaImágenesEnCombos;
 
 import java.util.ArrayList;
-import javafx.application.Platform;
 import javafx.scene.control.ListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import pvzheroes.clases.constantes;
 import pvzheroes.clases.diccionarios.DiccionarioImágenes;
 import pvzheroes.clases.diccionarios.DiccionarioSQL;
-import pvzheroes.clases.diálogos.DiálogoGenérico;
 
 public class IconoCell extends ListCell<String> {
 

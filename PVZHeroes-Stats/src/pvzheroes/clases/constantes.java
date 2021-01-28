@@ -351,7 +351,7 @@ public class constantes {
             if (Combobox.equals("Funciones")) {
                 OpcionesCombo = new String[]{"Conteo", "Media", "Máximo", "Mínimo"};
             } else {
-                OpcionesCombo = new String[]{"Ataque", "Defensa", "Coste"};
+                OpcionesCombo = new String[]{"Ataque", "Defensa", "Coste", "NumeroAtributos"};
             }
         }
     }
@@ -363,7 +363,9 @@ public class constantes {
         public String[] OpcionesCombo;
 
         COMPONENTE_GRÁFICO_DISPERSIÓN(String eje) {
-            OpcionesCombo = new String[]{"Eje " + eje + ": Ataque", "Eje " + eje + ": Defensa", "Eje " + eje + ": Coste"};
+            OpcionesCombo = 
+                    new String[]{"Eje " + eje + ": Ataque", "Eje " + eje + ": Defensa", "Eje " + eje + ": Coste", 
+                        "Eje " + eje + ": NumeroAtributos"};
         }
     }
 

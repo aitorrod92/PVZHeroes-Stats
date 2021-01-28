@@ -199,7 +199,7 @@ public class ModoGráficos {
                     int NúmeroColumnas = MétodosCompartidos.ObtenerNúmeroColumnas(GridGráficos);
                     GridGráficos.add(Gráfico, 0, 2, NúmeroColumnas, 1);
                     int NúmeroDeGráfico = SelecciónTipoGráfico.getSelectionModel().getSelectedIndex();
-                    new CrearToolTip(Gráfico, ModoGráficos.this.PANEL_GRÁFICOS, CrearToolTip.InicioGráficos 
+                    new CrearToolTip(Gráfico, ModoGráficos.this.PANEL_GRÁFICOS, CrearToolTip.InicioGráficos
                             + NúmeroDeGráfico);
 
                     // Modificaciones posteriores a la adicción de los nodos del gráfico
@@ -464,6 +464,9 @@ public class ModoGráficos {
                         case "Coste":
                             ValorX = Integer.valueOf(carta.getCoste());
                             break;
+                        case "NumeroAtributos":
+                            ValorX = Integer.valueOf(carta.getNumeroAtributos());
+                            break;
                     }
                     switch (ComboY) {
                         case "Ataque":
@@ -474,6 +477,9 @@ public class ModoGráficos {
                             break;
                         case "Coste":
                             ValorY = Integer.valueOf(carta.getCoste());
+                            break;
+                        case "NumeroAtributos":
+                            ValorY = Integer.valueOf(carta.getNumeroAtributos());
                             break;
                     }
 

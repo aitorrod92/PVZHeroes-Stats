@@ -316,8 +316,8 @@ public class Carta {
         return etiqueta;
     }
 
-    public HBox getNumeroAtributos() {
-        HBox Caja = new HBox();
+    public String getNumeroAtributos() {
+        /*HBox Caja = new HBox();
         Label etiqueta = new Label(NumeroAtributos.get());
         if (NumeroAtributos.get().equals("0")) {
             etiqueta.setId(constantes.IDs_CSS.TEXTO_GRIS.identificador);
@@ -326,7 +326,7 @@ public class Carta {
         } else {
             Caja.setStyle("-fx-background-color: green");
         }
-        Caja.getChildren().add(etiqueta);
-        return Caja;
+        Caja.getChildren().add(etiqueta);*/
+        return NumeroAtributos.get();
     }
 }
