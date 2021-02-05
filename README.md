@@ -19,6 +19,10 @@
 
 ![image](https://user-images.githubusercontent.com/40747197/101831254-f71b5080-3b35-11eb-91e5-6e8607336498.png)
 
-To make it run, just keep the provided jar files in the same directory as the folder "recursos". If you decide to compile them by yourself, take into account you will also need to specify the path to the libraries in the jar of PVZHeroes-Stats by following the next steps: 1) Open the JAR with WinRar, 2) Access to "META-INF/MANIFESTMF" and open it, 3) Sustitute the line that starts with  "ClassPath" with "Class-Path: recursos/recursosPrograma/librerías/controlsfx-8.40.14.jar recursos/recursosPrograma/librerías/sqlite-jdbc-3.30.1.jar", 4) Save the modification.
+There are 3 optiones to make it run:
+1. Download the installer from <a href="https://www.patreon.com/posts/pvz-heroes-stats-43893640">this link</a> and run it. You will get a manual, two exe files and a folder named "Recursos". When you run any of the programs, make sure they're in the same directory as "Recursos".
+2. Download the jar files and execute them, keeping them in the same directory as "Recursos".
+3. Compile the project by yourself. Take into account you will also need to specify the path to the libraries in the jar of PVZHeroes-Stats by following the next steps: 1) Open the JAR with WinRar, 2) Access to "META-INF/MANIFESTMF" and open it, 3) Sustitute the line that starts with  "ClassPath" with "Class-Path: recursos/recursosPrograma/librerías/controlsfx-8.40.14.jar recursos/recursosPrograma/librerías/sqlite-jdbc-3.30.1.jar", 4) Save the modification.
 
 Last JAR update: December 2020.
+Last installer and executables update: November 2020.
